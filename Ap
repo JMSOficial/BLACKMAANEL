@@ -1,0 +1,22 @@
+produto = [
+    ["Maçã", 10],
+    ["Banana", 5],
+    ["Laranja", 8]
+]
+
+print(produto)
+
+def app ():
+    add = str(input("Adicione a fruta e o preço  "))
+    produto.append(add)
+
+app ()
+app ()
+print(produto)
+
+
+print("Removido",produto.pop(0))
+print("Removido",produto.pop(0))
+print("Removido",produto.pop(0))
+
+print(produto)
