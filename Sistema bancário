@@ -1,0 +1,43 @@
+saldo = 500
+extrato = []
+while True:
+
+    op = int(input("\nDigite uma opção \n1 - Ver saldo \n2 - Depositar \n3 - Sacar \n4 - Extrato \n5 - Sair  "))
+
+    match op:
+      case 1:
+       print("Ver saldo")
+       print("\nSaldo da conta", saldo)
+
+      case 2:
+        print("Depositar")
+        def depositar(valor):
+            return valor
+        depo = int(input("Deposite um valor:  "))
+        extrato.append(depo)
+        saldo += depo
+        print("\nValor depositado na conta \nSaldo atualizado para", saldo)  
+
+      case 3:
+        print("Sacar")
+        def sacar(valor):
+          return valor
+        print("Saldo disponivél", saldo)
+        saca = float(input("Qual valor para sacar:  "))
+        extrato.append(saca)
+        if saca > saldo:
+          print("Saldo insuficiente")
+        else:
+          saldo -= saca
+          print("Saque realizado") 
+        print("Valor retirado da conta \nSaldo atualizado", saldo)  
+
+      case 4:
+        print("Extrato")
+        print("todos os depositos e saques", extrato)
+        print("Saldo atual", saldo)
+      case 5:
+        print("Sair")  
+        break        
+      case _:
+        print("Opção não encontrada")  
