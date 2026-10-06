@@ -5,4 +5,4 @@
 
 ## Entre em contato
 <img src="https://cdn.simpleicons.org/discord/5865F2" width="50"/>
-manel__0909009090
+joaomaneel777@gmail.com
